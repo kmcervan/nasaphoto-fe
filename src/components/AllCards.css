@@ -1,0 +1,13 @@
+.cards {
+    /* border: black solid 3px; */
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px ;
+    padding: 40px 0px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    max-width: 1000px;
+}
