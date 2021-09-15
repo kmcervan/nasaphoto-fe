@@ -12,3 +12,128 @@
   color: #61dafb;
 }
 
+/*********************** NAVBAR START *************************/
+.navbar {
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: rgba(19, 153, 142, 0.7);
+  width: 80%;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  max-width: 1000px;
+}
+/* .navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+} */
+
+.navbar-logo {
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+/*********************** NAVBAR END ***************************/
+
+/*********************** ALLCARDS START ***********************/
+.cards {
+  /* border: black solid 3px; */
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px ;
+  /* border-radius: 10px; */
+  columns: 3;
+  break-inside: avoid;
+  overflow: hidden;
+  /* column-gap: 15px; */
+  max-width: 1000px;
+}
+/*********************** ALLCARDS END *************************/
+
+/*********************** CARDS START **************************/
+.card-container {
+  /* margin: 0 auto; */
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgba(19, 153, 142, 0.7);
+  border-radius: 10px;
+  /* vertical-align:top; */
+}
+
+.image-container {
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.heart-image {
+  width: 100%;
+}
+
+.image-container:hover .image-container {
+  opacity: 0.3;
+}
+
+.image-container:hover .image-hover-heart {
+  opacity: 0.9;
+}
+
+.image-hover-heart {
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start; */
+}
+
+.card-info {
+  height: auto;
+  padding: 0px 15px 15px 15px;
+  text-align: left;
+}
+
+.nasa-photo-link {
+  text-decoration: none;
+  color: white;
+}
+
+.info-section {
+  margin: 0.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 0.7rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+/*********************** CARDS END ****************************/
