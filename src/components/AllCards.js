@@ -5,9 +5,6 @@ import Cards from './Cards';
 
 function AllCards() {
     const [nasaCard, setNasaCard] = useState([]);
-    // const [info, setInfo] = useState([]);
-    // const [title, setTitle] = useState([]);
-    // const [date, setDate] = useState([]);
 
     const fetchData = () => {
             axios
@@ -15,10 +12,6 @@ function AllCards() {
             .then((res) => {
                 console.log(res.data)
                 setNasaCard(res.data);
-                // setInfo(res.data.explanation);
-                // setTitle(res.data.title);
-                // setDate(res.data.date);
-                
             })
             .catch((error) => {
                 console.log(error);
@@ -31,7 +24,6 @@ function AllCards() {
 
     return (
         <div className='cards'>
-            {/* <Cards details={nasaCard} key={nasaCard[1]}/> */}
             {nasaCard.map( cardInfo => {
                 console.log(cardInfo)
                 return <Cards key={cardInfo.date} details={cardInfo} />
