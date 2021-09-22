@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
         <nav className='navbar'>
             <div className='navbar-container'>
-                <Link to='/' className='navbar-logo'>
-                    SPACESTAGRAM 
-                </Link>
+                    <h1 className='navbar-logo'>SPACESTAGRAM</h1>
+                    <p>Brought to you by NASA&apos;s image API</p>
             </div>
         </nav>
     )
