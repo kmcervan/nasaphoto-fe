@@ -5,7 +5,6 @@ import Cards from './Cards';
 
 function AllCards() {
     const [nasaCard, setNasaCard] = useState([]);
-
     const fetchData = () => {
             axios
             .get(`${BASE_URL}?api_key=${API_KEY}&count=21`)
