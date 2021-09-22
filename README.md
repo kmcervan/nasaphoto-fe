@@ -15,7 +15,7 @@ npm install
 npm start
 ```
 
-## Website
+## Deployed Project
 
 https://spacestagram200.herokuapp.com/
 
