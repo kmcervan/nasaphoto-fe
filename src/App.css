@@ -1,24 +1,30 @@
-.App {
+body{
   text-align: center;
+  width: auto;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h3 {
+  font-size: 1.3rem;
 }
-
+h4 {
+  font-size: 0.7rem;
+}
+h5 {
+  font-size: 1rem;
+}
 /*********************** NAVBAR START *************************/
 .navbar {
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 2% auto;
   background-color: rgba(19, 153, 142, 0.7);
+  /* background-color: black; */
   width: 80%;
-  height: 80px;
+  height: 85px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -26,74 +32,59 @@
   font-size: 1.5rem;
   max-width: 1000px;
 }
-/* .navbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-} */
-
 .navbar-logo {
   color: white;
   font-family: 'Fredoka One', cursive;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
+}
+p {
+  margin-top: -30px;
+  font-size: .8rem;
+  color: black;
 }
 /*********************** NAVBAR END ***************************/
 
 /*********************** ALLCARDS START ***********************/
 .cards {
-  /* border: black solid 3px; */
-  width: 80%;
   margin: 0 auto;
-  margin-top: 40px ;
-  /* border-radius: 10px; */
+  width: 80%;
   columns: 3;
   break-inside: avoid;
   overflow: hidden;
-  /* column-gap: 15px; */
+  column-gap: 15px;
   max-width: 1000px;
 }
 /*********************** ALLCARDS END *************************/
 
 /*********************** CARDS START **************************/
 .card-container {
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 15px;
   border-radius: 10px;
   background-color: rgba(19, 153, 142, 0.7);
-  border-radius: 10px;
 }
-
 .image-container {
   position: relative;
 }
-
 .card-image {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   opacity: 1;
   display: block;
-  width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
 }
-
 .heart-image {
   width: 100%;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
-
 .image-container:hover .image-container {
   opacity: 0.3;
 }
-
 .image-container:hover .image-hover-heart {
   opacity: 0.9;
 }
-
 .image-hover-heart {
   width: 100%;
   transition: .5s ease;
@@ -104,32 +95,75 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
 .card-info {
   height: auto;
   padding: 0px 15px 15px 15px;
   text-align: left;
 }
-
 .nasa-photo-link {
   text-decoration: none;
   color: white;
 }
-
 .info-section {
   margin: 0.5%;
-  font-family: 'Montserrat', sans-serif;
-}
-
-h3 {
-  font-size: 1.3rem;
-}
-
-h4 {
-  font-size: 0.7rem;
-}
-
-h5 {
-  font-size: 1rem;
 }
 /*********************** CARDS END ****************************/
+
+
+
+
+
+/******************** Under 767 px **************************/
+@media (min-width: 320px) and (max-width:767px) {
+  .navbar {
+    margin-top: 0px;
+    width: 100%;
+    height: 90px;
+    border-radius: 0px;
+    font-size: 1.3rem;
+  }
+  p {
+    margin-top: -25px;
+    font-size: .7rem;
+  }
+  .cards {
+    width: 100%;
+    margin-top: 2%;
+    columns: 1;
+  }
+  .card-container {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 0px;
+  }
+  .card-image {
+    border-radius: 0px;
+  }
+  button{
+    margin-top: 2%;
+  }
+}
+
+
+
+
+
+/******************** Under 1024 px **************************/
+@media (min-width: 768px) and (max-width:1024px){
+  .navbar {
+    margin-top: 30px;
+    width: 90%;
+    font-size: 1.5rem;
+  }
+  .cards {
+    width: 90%;
+    margin-top: 30px ;
+    columns: 2;
+    overflow: hidden;
+    break-inside: avoid;
+    
+  }
+  .card-container {
+    margin-bottom: 25px;
+  }
+}

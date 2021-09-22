@@ -7,7 +7,7 @@ function AllCards() {
     const [nasaCard, setNasaCard] = useState([]);
     const fetchData = () => {
             axios
-            .get(`${BASE_URL}?api_key=${API_KEY}&count=21`)
+            .get(`${BASE_URL}?api_key=${API_KEY}&count=12`)
             .then((res) => {
                 console.log(res.data)
                 setNasaCard(res.data);
