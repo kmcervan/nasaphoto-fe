@@ -7,7 +7,7 @@ you can create your own repo by forking
 
 **Download all dependencies**
 ```bash
-npm start
+npm install
 ```
 
 **Start live server**
